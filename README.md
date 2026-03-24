@@ -21,23 +21,11 @@ Across the three projects, the common threads are:
 
 ## 3. Projects
 
-### `snowcrash`
-
-Progressive **Linux privilege-escalation** challenges from `level00` through `level14`, each with a `solution.md` and optional `artifacts/` when something clarifies the path.
-
-**Demonstrates:** recon on binaries and scripts, common local misconfiguration and injection patterns, and **gdb**-based bypasses in a structured, level-by-level writeup style.
-
-### `rainfall`
-
-**Binary exploitation and reverse engineering** on a level path (`level0`–`level9`, plus `bonus0`–`bonus3`), with `resources/` walkthroughs, source context, exploit scripts where useful, and shared `tools/`.
-
-**Demonstrates:** stack and heap overflows, **format strings** (including GOT-oriented writes), shellcode delivery, heap and C++ vtable abuse, and related integer/logic pitfalls—documented with traces and artifacts.
-
-### `override`
-
-**Binary exploitation on Linux** (x86 and x86-64 in later levels), organized per level (`level00`–`level09`) with `solution.md` and optional `artifacts/` (similar spirit to `snowcrash/`).
-
-**Demonstrates:** ret2libc-style chains, **format-string** leaks and writes, shellcode under **ptrace** constraints, integer overflow tricks, and application-level abuse paths—grounded in the existing writeups.
+| Project | Focus | What it demonstrates |
+| --- | --- | --- |
+| [snowcrash](./snowcrash/) | Privilege escalation, Linux trust boundaries, SUID/cron/service paths, debugger-assisted bypasses | Structured level writeups: binary/script recon, local misconfiguration and injection patterns, **gdb**-oriented bypasses |
+| [rainfall](./rainfall/) | Binary exploitation: stack / heap / format-string, shellcode, payload construction | Documented progression (levels + bonuses): memory corruption, format strings (incl. GOT), shellcode delivery, heap/C++ cases, integer/logic pitfalls |
+| [override](./override/) | Advanced binary exploitation: ret2libc, format-string leaks and writes, ptrace constraints, integer tricks | Per-level analysis: static/dynamic work, shellcode under syscall monitoring, ret2libc and format abuse, application-level tricks (x86 → x86-64) |
 
 ## 4. Repository structure
 
