@@ -41,3 +41,8 @@ Grounded in the existing `solution.md` writeups, the levels cover:
 | `level07` | “Storage” service with weak index checks; **integer overflow** on index + **ret2libc** |
 | `level08` | Backup utility writing under a user-controlled relative tree → read target file via `/tmp` layout |
 | `level09` | x86-64 message path; **off-by-one** username copy widens message; overflow to reach **hidden function** |
+
+
+## Public portfolio note
+
+Challenge secrets and progression artifacts (flag values, passwords) are removed or redacted in this public repository version.
